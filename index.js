@@ -7,6 +7,8 @@ const port =process.env.PORT || 5000
 
 const app = express();
 
+app.use(cors());
+
 mongoose.connect(process.env.MONOGO_DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
