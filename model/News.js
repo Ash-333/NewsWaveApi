@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const newsSchema = new mongoose.Schema({
   title: String,
-  link: String,
+  url: String,
   description: String,
   imgUrl: String,
 });
